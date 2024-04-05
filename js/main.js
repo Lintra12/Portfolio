@@ -1,7 +1,7 @@
 
 $(function () {
 
-  $("body").on("click", "a", function (event) {
+  $(".logo, .menu__link, .header__link").on("click", "a", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
       top = $(id).offset().top;
